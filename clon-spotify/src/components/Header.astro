@@ -8,19 +8,19 @@ import { Icon } from 'astro-icon/components'
             <img src="https://res.cloudinary.com/dvqrpmnur/image/upload/v1725332635/Spotify_Icon_RGB_White_ngisp3.png" alt="Spotify Icon" class="h-8 w-8 cursor-pointer">
         </div>
         <div class="flex justify-center items-center gap-2">
-            <div class="bg-spotify-gray rounded-full p-3 cursor-pointer hover:scale-105">
+            <a class="bg-spotify-gray rounded-full p-3 cursor-pointer transition-transform hover:scale-105" href="">
                 <Icon name="carbon:home" class="text-spotify-light-gray h-6 w-6"/>
-            </div>
-            <div class="flex justify-start items-center gap-2 bg-spotify-gray w-[475px] rounded-full text-spotify-light-gray p-3 font-semibold cursor-pointer hover:bg-spotify-hover-gray">
+            </a>
+            <div class="flex justify-start items-center gap-2 bg-spotify-gray w-[475px] rounded-full text-spotify-light-gray p-3 font-semibold cursor-pointer transition-colors hover:bg-spotify-hover-gray">
                 <Icon name="carbon:search" class="h-6 w-6"/>
-                <p>¿Qué quieres reproducir?</p>
+                <p>¿What do you want to play?</p> 
             </div>
         </div>
         <div class="flex justify-center items-center gap-6">
             <div>
-                <Icon name="carbon:notification" class="text-spotify-light-gray h-5 w-5 cursor-pointer hover:text-white hover:scale-105"/>
+                <Icon name="carbon:notification" class="text-spotify-light-gray h-5 w-5 cursor-pointer transition-colors hover:text-white hover:scale-105"/>
             </div>
-            <img src="https://res.cloudinary.com/dvqrpmnur/image/upload/v1725331939/02abd6d9e7bd7881724e72f9d74fb038_jubbo3.jpg" alt="User Profile" class="border-8 border-spotify-gray rounded-full h-12 w-12 cursor-pointer hover:scale-105">
+            <img src="https://res.cloudinary.com/dvqrpmnur/image/upload/v1725331939/02abd6d9e7bd7881724e72f9d74fb038_jubbo3.jpg" alt="User Profile" class="border-8 border-spotify-gray rounded-full h-12 w-12 cursor-pointer transition-transform hover:scale-105">
         </div>
     </div>
 </header>
