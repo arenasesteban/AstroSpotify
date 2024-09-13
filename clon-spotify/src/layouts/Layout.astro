@@ -2,10 +2,6 @@
 import Header from '../components/Header.astro';
 import Sidebar from '../components/Sidebar.astro';
 
-interface Props {
-	title: string;
-}
-
 const { title } = Astro.props;
 ---
 
@@ -19,7 +15,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title} | Astro Spotify</title>
 	</head>
-	<body class="h-screen flex flex-col gap-2">
+	<body class="h-screen flex flex-col p-2 gap-2">
 		<Header class="flex-none" />
 		<div class="flex flex-1 gap-2">
 			<Sidebar class="flex-none" />
@@ -35,9 +31,5 @@ const { title } = Astro.props;
 		font-family: system-ui, sans-serif;
 		background: #000;
 		color-scheme: dark light;
-	}
-	body {
-		box-sizing: border-box;
-		padding: 8px;
 	}
 </style>
